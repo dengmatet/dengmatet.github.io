@@ -24,20 +24,6 @@ Session(app)
 def index():
     return render_template("index.html")
 
-@app.route("/login", methods=["GET", "POST"])
-def login():
-    # Validate submission
-    if request.method == "POST":
-        session["email"] = request.form.get("email")
-        session["password"] = request.form.get("password")
-    return render_template("login.html" , placeholder=session.get("fname"))
-
-@app.route("/logout")
-def logout():
-    # Remove user session data
-    session.clear()
-    return redirect("/")
-
 
 if __name__ == "__main__":
     app.run(debug=True)
