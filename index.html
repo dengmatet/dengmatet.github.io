@@ -4,73 +4,560 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>deng-matet.GitHub.io</title>
+    <!-- box icons -->
+    <link
+      href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css"
+      rel="stylesheet"
+    />
+
+    <!-- custom css -->
     <link rel="stylesheet" href="static/style.css" />
-    <link rel="stylesheet" href="static/reset.css" />
-    <link rel="stylesheet" href="static/css/bootstrap.min.css" />
-    <link rel="stylesheet" href="static/js/bootstrap.min.js" />
   </head>
+
   <body>
-    <div class="container">
-      <div class="text-center">
-        <img class="img mt-5" src="static/img/dengmatet.jpg" alt="" />
-        <h2>Matet Martin</h2>
+    <!-- header -->
+    <header class="active">
+      <a href="#" class="logo">Matet.</a>
 
-        <p>Software Engineer | IT Professional</p>
-        <br />
-        <p class="text">
-          Hello, I'm Deng, a software <br />
-          engineer web design network engineering<br />
-          living in Juba, South Sudan.
-        </p>
-      </div>
-      <h2>About Me</h2>
-      <p class="text">
-        Welcome to my software developer portfolio! Here, you'll find a
-        collection of my work, showcasing my expertise in coding, system design,
-        and software development. Explore my projects to see examples of my
-        coding skill, problem solving abilities, and the innovative solutions
-        I've developed . Whether it's front-end or back-end development, I
-        strive to create efficient and scalable software solutions, Through
-        Projects in Harvard's CS50, with a bit of curiosity and a drive to
-        learn, I'm constantly Exploring my way to approach challenges in
-        networking systems engineering.
-      </p>
-      <h2>Education & Certifications</h2>
-      <a class="nav-link text-primary" href=""
-        >Technical Support Fundamentals,</a
-      >
-      <a class="nav-link text-primary" href=""
-        >CCIEPython, Official GNS3 of Computer Networking</a
-      >
-      <p class="text">
-        CS50 Web Programming with Python and Javascript, HarvardX
-      </p>
-      <p class="text">Diploma Degree in Computer Science, University of Juba</p>
+      <i class="bx bx-menu" id="menu-icon"></i>
 
-      <h2>Projects</h2>
-      <h4>Shopping Management system Built with PHP</h4>
-      <p>
-        A web application base on idea of digital marketing<br />
-        the MVC pattern, allowing for customer, product, and payment management.
-      </p>
-      <a class="nav-link text-primary" href="">Source Code</a>
-      <br />
-      <footer class="text-center bg-success">
-        <div class="sm-link">
-          <a href="https://matetmartin5@gmail.com"
-            ><img src="static/img/communication.png" alt=""
-          /></a>
-          <a href="https://www.youtube.com/@matetmartin9826"
-            ><img src="static/img/play.png" alt=""
-          /></a>
-          <a href="https://www.facebook.com/mtrmartin"
-            ><img src="static/img/facebook.png" alt=""
-          /></a>
-          <a href="https://dengmatet@users.noreply.github.com"
-            ><img src="static/img/github.png" alt=""
-          /></a>
-        </div>
-      </footer>
+      <nav>
+        <a href="#" class="active">Home</a>
+        <a href="#">Services</a>
+        <a href="#">Resume</a>
+        <a href="#">Portfolio</a>
+        <a href="#">Contact</a>
+      </nav>
+    </header>
+
+    <!-- bars background -->
+    <div class="bars-box active">
+      <div class="bar" style="--i: 6"></div>
+      <div class="bar" style="--i: 5"></div>
+      <div class="bar" style="--i: 4"></div>
+      <div class="bar" style="--i: 3"></div>
+      <div class="bar" style="--i: 2"></div>
+      <div class="bar" style="--i: 1"></div>
     </div>
+
+    <!-- Home section-->
+    <section class="home active">
+      <div class="home-detail">
+        <h1>Matet martin</h1>
+        <h2>
+          I'm a
+          <span style="--i: 3" data-text="Coder">Coder</span>
+          <span style="--i: 2" data-text="Frontend Developer"
+            >Frontend Developer</span
+          >
+          <span style="--i: 1" data-text="Youtuber">Youtuber</span>
+        </h2>
+        <p>
+          Hello I'm Matet a software engineer, living in Juba capital of South
+          Sudan.
+        </p>
+        <div class="btn-sci">
+          <a href="index.html" class="btn">Download CV</a>
+          <div class="sci">
+            <a href="https://dengmatet@users.noreply.github.com"
+              ><i class="bx bxl-github"></i
+            ></a>
+            <a href="https://www.matetmartin5@.linkedIn.com"
+              ><i class="bx bxl-linkedin"></i
+            ></a>
+            <a href="https://matetmartin5@gmail.com"
+              ><i class="bx bxl-gmail"></i
+            ></a>
+            <a href="https://www.youtube.com/@matetmartin9826"
+              ><i class="bx bxl-youtube"></i
+            ></a>
+          </div>
+        </div>
+      </div>
+
+      <div class="home-img">
+        <div class="img-box">
+          <div class="img-item">
+            <img src="static/img/deng.jpg" alt="" />
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!--Services section-->
+    <section class="services">
+      <h2 class="heading">My <span>Services</span></h2>
+      <div class="services-container">
+        <div class="services-box">
+          <div class="icon">
+            <i class="bx bx-code-alt"></i>
+            <a href="#"><i class="bx bx-arrow-back"></i></a>
+          </div>
+          <h3>Web Development</h3>
+          <p>
+            Take full control of your web applications with advanced web
+            techniques such as database migration and web service communication
+          </p>
+        </div>
+
+        <div class="services-box">
+          <div class="icon">
+            <i class="bx bx-paint"></i>
+            <a href="#"><i class="bx bx-arrow-back"></i></a>
+          </div>
+          <h3>UI/UX Design</h3>
+          <p>(comment)</p>
+        </div>
+
+        <div class="services-box">
+          <div class="icon">
+            <i class="bx bx-palette"></i>
+            <a href="#"><i class="bx bx-arrow-back"></i></a>
+          </div>
+          <h3>Graphic Design</h3>
+          <p>(comment)</p>
+        </div>
+
+        <div class="services-box">
+          <div class="icon">
+            <i class="bx bx-trending-up"></i>
+            <a href="#"><i class="bx bx-arrow-back"></i></a>
+          </div>
+          <h3>SEO</h3>
+          <p>(comment)</p>
+        </div>
+
+        <div class="services-box">
+          <div class="icon">
+            <i class="bx bx-slideshow"></i>
+            <a href="#"><i class="bx bx-arrow-back"></i></a>
+          </div>
+          <h3>Video Editing</h3>
+          <p>(comment)</p>
+        </div>
+
+        <div class="services-box">
+          <div class="icon">
+            <i class="bx bx-camera"></i>
+            <a href="#"><i class="bx bx-arrow-back"></i></a>
+          </div>
+          <h3>Photography</h3>
+          <p>(comment)</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- Resume -->
+    <section class="resume">
+      <div class="resume-container">
+        <div class="resume-box">
+          <h2>Why Hire Me?</h2>
+          <p class="desc">
+            problem solving abilities, and the innovative solutions I've
+            developed . Whether it's front-end or back-end development, I strive
+            to create efficient and scalable software solutions,
+          </p>
+          <button class="resume-btn active">Experience</button>
+          <button class="resume-btn">Education</button>
+          <button class="resume-btn">Skills</button>
+          <button class="resume-btn">About Me</button>
+        </div>
+
+        <div class="resume-box">
+          <div class="resume-detail experience active">
+            <h2 class="heading">My <span>Experience</span></h2>
+            <p class="desc">(comment)</p>
+            <div class="resume-list">
+              <div class="resume-item">
+                <p class="year">2023 - present</p>
+                <h3>Full Stack Developer</h3>
+                <p class="company">From Home</p>
+                <p>Full Web applications using framework's</p>
+              </div>
+              <div class="resume-item">
+                <p class="year">2022 - 2023</p>
+                <h3>Backend Developer</h3>
+                <p class="company">University of Juba</p>
+                <p>Design and analysis</p>
+              </div>
+              <div class="resume-item">
+                <p class="year">2021 - 2022</p>
+                <h3>Frontend Developer</h3>
+                <p class="company">University of Juba</p>
+                <p>Website applications</p>
+              </div>
+              <div class="resume-item">
+                <p class="year">2020 - 2021</p>
+                <h3>Senior Developer</h3>
+                <p class="company">University of Juba</p>
+                <p>Web Applications</p>
+              </div>
+              <div class="resume-item">
+                <p class="year">2020 - 2021</p>
+                <h3>Junior Developer</h3>
+                <p class="company">University of Juba</p>
+                <p>Basics computer Component, Languages</p>
+              </div>
+              <div class="resume-item">
+                <p class="year">2020 - 2021</p>
+                <h3>Beginning Developer</h3>
+                <p class="company">From Home</p>
+                <p>Online Course (Solo learn, Youtube Tutorial)</p>
+              </div>
+            </div>
+          </div>
+
+          <div class="resume-detail education">
+            <h2 class="heading">My <span>Education</span></h2>
+            <p class="desc">
+              Diploma Degree in Computer Science, University of Juba Technical
+              Support Fundamentals,Through Projects in Harvard's CS50, CS50 Web
+              Programming with Python and Javascript, HarvardX
+            </p>
+            <div class="resume-list">
+              <div class="resume-item">
+                <p class="year">2024</p>
+                <h3>Programming Course</h3>
+                <p class="company">Online Course Platform</p>
+                <p>(comment)</p>
+              </div>
+              <div class="resume-item">
+                <p class="year">2022 - 2023</p>
+                <h3>Graduation Certificate</h3>
+                <p class="company">University of Juba</p>
+                <p>(comment)</p>
+              </div>
+              <div class="resume-item">
+                <p class="year">2021</p>
+                <h3>Web Development Bootcamp</h3>
+                <p class="company">University of Juba</p>
+                <p>(comment)</p>
+              </div>
+              <div class="resume-item">
+                <p class="year">2020</p>
+                <h3>Fundamentals Programming</h3>
+                <p class="company">University of Juba</p>
+                <p>(comment)</p>
+              </div>
+              <div class="resume-item">
+                <p class="year">2020</p>
+                <h3>Fundamentals Programming</h3>
+                <p class="company">University of Juba</p>
+                <p>(comment)</p>
+              </div>
+              <div class="resume-item">
+                <p class="year">2020</p>
+                <h3>Fundamentals Programming</h3>
+                <p class="company">University of Juba</p>
+                <p>(comment)</p>
+              </div>
+            </div>
+          </div>
+
+          <div class="resume-detail skills">
+            <h2 class="heading">My <span>Skills</span></h2>
+            <p class="desc">(comment)</p>
+            <div class="resume-list">
+              <div class="resume-item">
+                <i class="bx bxl-html5"></i>
+                <span>HTML5</span>
+              </div>
+              <div class="resume-item">
+                <i class="bx bxl-css3"></i>
+                <span>CSS3</span>
+              </div>
+              <div class="resume-item">
+                <i class="bx bxl-javascript"></i>
+                <span>Javascript</span>
+              </div>
+              <div class="resume-item">
+                <i class="bx bxl-bootstrap"></i>
+                <span>Bootstrap</span>
+              </div>
+              <div class="resume-item">
+                <i class="bx bxl-tailwind-css"></i>
+                <span>Tailwind CSS</span>
+              </div>
+              <div class="resume-item">
+                <i class="bx bxl-php"></i>
+                <span>PHP</span>
+              </div>
+              <div class="resume-item">
+                <i class="bx bxl-python"></i>
+                <span>Python3</span>
+              </div>
+              <div class="resume-item">
+                <i class="bx bxl-postgresql"></i>
+                <span>Sqlite3</span>
+              </div>
+              <div class="resume-item">
+                <i class="bx bxl-flask"></i>
+                <span>Flask</span>
+              </div>
+            </div>
+          </div>
+
+          <div class="resume-detail about">
+            <h2 class="heading">About<span>Me</span></h2>
+
+            <p class="desc">
+              Welcome to my software developer portfolio! Here, you'll find a
+              collection of my work, showcasing my expertise in coding, system
+              design, and software development. Explore my projects to see
+              examples of my coding skill, with a bit of curiosity and a drive
+              to learn, I'm constantly Exploring my way to approach challenges
+              in networking systems engineering.
+            </p>
+            <div class="resume-list">
+              <div class="resume-item">
+                <p>
+                  Name
+                  <span>Matet Martin</span>
+                </p>
+              </div>
+              <div class="resume-item">
+                <p>
+                  Gender
+                  <span>Male</span>
+                </p>
+              </div>
+              <div class="resume-item">
+                <p>
+                  Age
+                  <span>28 Years Old</span>
+                </p>
+              </div>
+              <div class="resume-item">
+                <p>
+                  Status
+                  <span>Single</span>
+                </p>
+              </div>
+              <div class="resume-item">
+                <p>
+                  City
+                  <span>Juba</span>
+                </p>
+              </div>
+              <div class="resume-item">
+                <p>
+                  Nationality
+                  <span>South Sudan</span>
+                </p>
+              </div>
+              <div class="resume-item">
+                <p>
+                  Experience
+                  <span>4 + Years</span>
+                </p>
+              </div>
+              <div class="resume-item">
+                <p>
+                  Full Time
+                  <span>Available</span>
+                </p>
+              </div>
+              <div class="resume-item">
+                <p>
+                  Freelance
+                  <span>Available</span>
+                </p>
+              </div>
+              <div class="resume-item">
+                <p>
+                  Phone
+                  <span>(+211) 981 532 821</span>
+                </p>
+              </div>
+              <div class="resume-item">
+                <p>
+                  Email
+                  <span>matetmartin5@gmail.com</span>
+                </p>
+              </div>
+              <div class="resume-item">
+                <p>
+                  Languages
+                  <span>English,Arabic</span>
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Portfolio section -->
+    <section class="portfolio">
+      <h2 class="heading">Latest <span>Project</span></h2>
+      <div class="portfolio-container">
+        <div class="portfolio-box">
+          <div class="portfolio-detail active">
+            <p class="numb">01</p>
+            <h3>Frontend project</h3>
+            <p>(comment)</p>
+            <div class="tech">
+              <p>HTML5, CSS3, Javascript</p>
+            </div>
+            <div class="live-github">
+              <a href="#">
+                <i class="bx bx-arrow-back"></i><span>Live Project</span>
+              </a>
+              <a href="#"
+                ><i class="bx bxl-github"></i><span>Github Repository</span>
+              </a>
+            </div>
+          </div>
+          <div class="portfolio-detail">
+            <p class="numb">02</p>
+            <h3>Backend project</h3>
+            <p>(comment)</p>
+            <div class="tech">
+              <p>MongoDB, Express.js</p>
+            </div>
+            <div class="live-github">
+              <a href="#">
+                <i class="bx bx-arrow-back"></i><span>Live Project</span>
+              </a>
+              <a href="#"
+                ><i class="bx bxl-github"></i><span>Github Repository</span>
+              </a>
+            </div>
+          </div>
+          <div class="portfolio-detail">
+            <p class="numb">03</p>
+            <h3>Full Stack project</h3>
+            <p>(comment)</p>
+            <div class="tech">
+              <p>Express.js, React.js, Node.js</p>
+            </div>
+            <div class="live-github">
+              <a href="#">
+                <i class="bx bx-arrow-back"></i><span>Live Project</span>
+              </a>
+              <a href="#"
+                ><i class="bx bxl-github"></i><span>Github Repository</span>
+              </a>
+            </div>
+          </div>
+          <div class="portfolio-detail">
+            <p class="numb">04</p>
+            <h3>Frontend project</h3>
+            <p>(comment)</p>
+            <div class="tech">
+              <p>React.js, Tailwind CSS</p>
+            </div>
+            <div class="live-github">
+              <a href="#">
+                <i class="bx bx-arrow-back"></i><span>Live Project</span>
+              </a>
+              <a href="#"
+                ><i class="bx bxl-github"></i><span>Github Repository</span>
+              </a>
+            </div>
+          </div>
+        </div>
+
+        <div class="portfolio-box">
+          <!-- images carousel -->
+          <div class="portfolio-carousel">
+            <div class="img-slide">
+              <div class="img-item">
+                <img src="static/img/communication.png" alt="" />
+              </div>
+              <div class="img-item">
+                <img src="static/img/facebook.png" alt="" />
+              </div>
+              <div class="img-item">
+                <img src="static/img/whatsapp.png" />
+              </div>
+              <div class="img-item">
+                <img src="static/img/play.png" alt="" />
+              </div>
+            </div>
+          </div>
+          <div class="navigation">
+            <button class="arrow-left disabled">
+              <i class="bx bx-chevron-left"></i>
+            </button>
+            <button class="arrow-right">
+              <i class="bx bx-chevron-right"></i>
+            </button>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Contact section -->
+    <section class="contact">
+      <div class="contact-container">
+        <div class="contact-box">
+          <h2>Let's Work Together</h2>
+          <p class="desc">Consider Win's For Both of Us</p>
+          <div class="contact-detail">
+            <i class="bx bxs-phone"></i>
+            <div class="detail">
+              <p>Phone</p>
+              <p>(+211 981 532 821)</p>
+            </div>
+          </div>
+
+          <div class="contact-detail">
+            <i class="bx bxs-envelope"></i>
+            <div class="detail">
+              <p>Email</p>
+              <p>matetmartin5@gmail.com</p>
+            </div>
+          </div>
+
+          <div class="contact-detail">
+            <i class="bx bxs-map"></i>
+            <div class="detail">
+              <p>Address</p>
+              <p>123 Anywhere Street, Juba</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="contact-box">
+          <form action="/" enctype="multipart/form-data" method="post">
+            <h2 class="heading">Contact <span>Me!</span></h2>
+            <div class="field-box">
+              <input type="text" name="name" placeholder="Full Name" required />
+              <input
+                type="email"
+                name="email"
+                placeholder="Email Address"
+                required
+              />
+              <input
+                type="tel"
+                name="numb"
+                placeholder="Phone Number"
+                required
+              />
+              <input
+                type="email"
+                name="sub-email"
+                placeholder="Email Subject"
+                required
+              />
+              <textarea
+                name="message"
+                id=""
+                placeholder="Your Message"
+                required
+              ></textarea>
+            </div>
+            <button type="submit" name="submit" class="btn">
+              Send Message
+            </button>
+          </form>
+        </div>
+      </div>
+    </section>
+
+    <!-- Custom js -->
+    <script src="static/js/script.js"></script>
   </body>
 </html>
