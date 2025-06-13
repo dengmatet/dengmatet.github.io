@@ -1,26 +1,11 @@
-<!DOCTYPE html>
-<html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>deng-matet.GitHub.io</title>
-    <!-- box icons -->
-    <link
-      href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css"
-      rel="stylesheet"
-    />
-
-    <!-- custom css -->
-    <link rel="stylesheet" href="static/style.css" />
-  </head>
-
-  <body>
+{% extends "base.html" %}
+  {% block title %} deng-matet.GitHub.io {% endblock %}
+  {% block content %}
+  
     <!-- header -->
     <header class="active">
       <a href="#" class="logo">Matet.</a>
-
       <i class="bx bx-menu" id="menu-icon"></i>
-
       <nav>
         <a href="#" class="active">Home</a>
         <a href="#">Services</a>
@@ -57,7 +42,7 @@
           Sudan.
         </p>
         <div class="btn-sci">
-          <a href="index.html" class="btn">Download CV</a>
+          <a href="#" class="btn">Download CV</a>
           <div class="sci">
             <a href="https://dengmatet@users.noreply.github.com"
               ><i class="bx bxl-github"></i
@@ -78,7 +63,7 @@
       <div class="home-img">
         <div class="img-box">
           <div class="img-item">
-            <img src="static/img/deng.jpg" alt="" />
+            <img src="/img/me.png" alt="" />
           </div>
         </div>
       </div>
@@ -95,8 +80,7 @@
           </div>
           <h3>Web Development</h3>
           <p>
-            Take full control of your web applications with advanced web
-            techniques such as database migration and web service communication
+            Front-End Development | Creating user-friendly interfaces using HTML, CSS, JavaScript, and frameworks like React or Vue.js to deliver responsive and interactive web experiences.
           </p>
         </div>
 
@@ -106,7 +90,9 @@
             <a href="#"><i class="bx bx-arrow-back"></i></a>
           </div>
           <h3>UI/UX Design</h3>
-          <p>(comment)</p>
+            <p>
+            UI/UX Design | Designing intuitive and visually appealing user interfaces, focusing on user experience, usability, and accessibility to ensure seamless interaction with digital products.
+            </p>
         </div>
 
         <div class="services-box">
@@ -115,7 +101,9 @@
             <a href="#"><i class="bx bx-arrow-back"></i></a>
           </div>
           <h3>Graphic Design</h3>
-          <p>(comment)</p>
+            <p>
+            Graphic Design | Crafting visually compelling graphics, logos, and branding materials using tools like Adobe Photoshop and Illustrator to enhance brand identity and communication.
+            </p>
         </div>
 
         <div class="services-box">
@@ -124,7 +112,9 @@
             <a href="#"><i class="bx bx-arrow-back"></i></a>
           </div>
           <h3>SEO</h3>
-          <p>(comment)</p>
+            <p>
+            SEO | Optimizing websites to improve their visibility on search engines, increasing organic traffic through keyword research, on-page and off-page optimization, and analytics.
+            </p>
         </div>
 
         <div class="services-box">
@@ -133,7 +123,9 @@
             <a href="#"><i class="bx bx-arrow-back"></i></a>
           </div>
           <h3>Video Editing</h3>
-          <p>(comment)</p>
+            <p>
+            Video Editing | Editing and producing engaging videos using software like Adobe Premiere Pro and After Effects, adding effects, transitions, and audio to create professional-quality content for various platforms.
+            </p>
         </div>
 
         <div class="services-box">
@@ -142,7 +134,9 @@
             <a href="#"><i class="bx bx-arrow-back"></i></a>
           </div>
           <h3>Photography</h3>
-          <p>(comment)</p>
+            <p>
+            Photography | Capturing high-quality images for events, products, and personal branding, utilizing professional equipment and editing tools to deliver visually stunning photographs that tell a story.
+            </p>
         </div>
       </div>
     </section>
@@ -153,9 +147,7 @@
         <div class="resume-box">
           <h2>Why Hire Me?</h2>
           <p class="desc">
-            problem solving abilities, and the innovative solutions I've
-            developed . Whether it's front-end or back-end development, I strive
-            to create efficient and scalable software solutions,
+            As a dedicated and versatile software engineer, I bring hands-on experience in full stack development, UI/UX design, and project delivery. My strong problem-solving skills, attention to detail, and commitment to continuous learning ensure I deliver high-quality solutions tailored to your needs. I am passionate about technology, reliable in meeting deadlines, and eager to contribute to your team's success.
           </p>
           <button class="resume-btn active">Experience</button>
           <button class="resume-btn">Education</button>
@@ -166,43 +158,43 @@
         <div class="resume-box">
           <div class="resume-detail experience active">
             <h2 class="heading">My <span>Experience</span></h2>
-            <p class="desc">(comment)</p>
+            <p class="desc">As a software developer, I specialize in building robust, scalable, and user-friendly applications. My expertise spans both frontend and backend technologies, enabling me to deliver complete solutions that meet client needs and industry standards.</p>
             <div class="resume-list">
               <div class="resume-item">
                 <p class="year">2023 - present</p>
                 <h3>Full Stack Developer</h3>
                 <p class="company">From Home</p>
-                <p>Full Web applications using framework's</p>
+                <p>Developing and maintaining both frontend and backend components of web applications, ensuring seamless integration, performance, and user experience across the entire stack.</p>
               </div>
               <div class="resume-item">
                 <p class="year">2022 - 2023</p>
                 <h3>Backend Developer</h3>
                 <p class="company">University of Juba</p>
-                <p>Design and analysis</p>
+                <p>Worked on backend systems, APIs, and database integration for university projects.</p>
               </div>
               <div class="resume-item">
                 <p class="year">2021 - 2022</p>
                 <h3>Frontend Developer</h3>
                 <p class="company">University of Juba</p>
-                <p>Website applications</p>
+                <p>Developed responsive user interfaces using HTML, CSS, and JavaScript, ensuring cross-browser compatibility and optimal user experience.</p>
               </div>
               <div class="resume-item">
                 <p class="year">2020 - 2021</p>
                 <h3>Senior Developer</h3>
                 <p class="company">University of Juba</p>
-                <p>Web Applications</p>
+                <p>Led a team of junior developers, managed project timelines, and implemented advanced features for university web applications.</p>
               </div>
               <div class="resume-item">
                 <p class="year">2020 - 2021</p>
                 <h3>Junior Developer</h3>
                 <p class="company">University of Juba</p>
-                <p>Basics computer Component, Languages</p>
+                <p>Assisted in developing and testing web applications, fixing bugs, and learning best practices in software engineering under the guidance of senior developers.</p>
               </div>
               <div class="resume-item">
                 <p class="year">2020 - 2021</p>
                 <h3>Beginning Developer</h3>
                 <p class="company">From Home</p>
-                <p>Online Course (Solo learn, Youtube Tutorial)</p>
+                <p>Started learning programming fundamentals, building small web projects, and gaining hands-on experience with HTML, CSS, and JavaScript.</p>
               </div>
             </div>
           </div>
@@ -210,53 +202,53 @@
           <div class="resume-detail education">
             <h2 class="heading">My <span>Education</span></h2>
             <p class="desc">
-              Diploma Degree in Computer Science, University of Juba Technical
-              Support Fundamentals,Through Projects in Harvard's CS50, CS50 Web
-              Programming with Python and Javascript, HarvardX
+              Diploma Degree in Computer Science, University of Juba. Technical Support Fundamentals through projects in Harvard's CS50, CS50 Web Programming with Python and JavaScript (HarvardX, Coursera).
             </p>
             <div class="resume-list">
               <div class="resume-item">
                 <p class="year">2024</p>
                 <h3>Programming Course</h3>
                 <p class="company">Online Course Platform</p>
-                <p>(comment)</p>
+                <p>Completed an online programming course from W3Schools, covering HTML, CSS, JavaScript, and web development fundamentals.</p>
               </div>
               <div class="resume-item">
                 <p class="year">2022 - 2023</p>
                 <h3>Graduation Certificate</h3>
                 <p class="company">University of Juba</p>
-                <p>(comment)</p>
+                <p>Earned a Graduation Certificate from the University of Juba, demonstrating comprehensive knowledge in computer science and software engineering. Also obtained a verified certificate from Coursera for completing HarvardX's CS50 Web Programming with Python and JavaScript, covering advanced web development concepts and hands-on projects.</p>
               </div>
               <div class="resume-item">
                 <p class="year">2021</p>
                 <h3>Web Development Bootcamp</h3>
                 <p class="company">University of Juba</p>
-                <p>(comment)</p>
+                <p>Completed an intensive online bootcamp focused on modern web development practices, including hands-on projects with HTML, CSS, JavaScript, and responsive design. Gained practical experience in building real-world web applications and collaborating in a remote learning environment.</p>
               </div>
               <div class="resume-item">
                 <p class="year">2020</p>
                 <h3>Fundamentals Programming</h3>
                 <p class="company">University of Juba</p>
-                <p>(comment)</p>
+                <p>Covered the fundamentals of programming, including algorithms, data structures, problem-solving techniques, and hands-on practice with HTML, CSS, and JavaScript.</p>
               </div>
               <div class="resume-item">
-                <p class="year">2020</p>
+                <p class="year">2021</p>
                 <h3>Fundamentals Programming</h3>
                 <p class="company">University of Juba</p>
-                <p>(comment)</p>
+                <p>Studied core programming concepts, including algorithms, data structures, and web fundamentals, with practical projects using HTML, CSS, and JavaScript.</p>
               </div>
               <div class="resume-item">
-                <p class="year">2020</p>
+                <p class="year">2022</p>
                 <h3>Fundamentals Programming</h3>
                 <p class="company">University of Juba</p>
-                <p>(comment)</p>
+                <p>Studied programming fundamentals, focusing on algorithms, data structures, and practical web development skills using HTML, CSS, and JavaScript.</p>
               </div>
             </div>
           </div>
 
           <div class="resume-detail skills">
             <h2 class="heading">My <span>Skills</span></h2>
-            <p class="desc">(comment)</p>
+            <p class="desc">
+              My skills include front-end and back-end web development, UI/UX design, graphic design, SEO, video editing, and photography. I am proficient in HTML5, CSS3, JavaScript, Bootstrap, Tailwind CSS, PHP, Python, Flask, and SQLite3. I am passionate about building responsive, user-friendly applications and continuously learning new technologies.
+            </p>
             <div class="resume-list">
               <div class="resume-item">
                 <i class="bx bxl-html5"></i>
@@ -427,7 +419,7 @@
           <div class="portfolio-detail">
             <p class="numb">03</p>
             <h3>Full Stack project</h3>
-            <p>(comment)</p>
+            <p>End-to-end web app development, both frontend and backend.</p>
             <div class="tech">
               <p>Express.js, React.js, Node.js</p>
             </div>
@@ -443,7 +435,7 @@
           <div class="portfolio-detail">
             <p class="numb">04</p>
             <h3>Frontend project</h3>
-            <p>(comment)</p>
+            <p>A modern, responsive web interface built with React.js and Tailwind CSS, focusing on user experience and performance.</p>
             <div class="tech">
               <p>React.js, Tailwind CSS</p>
             </div>
@@ -463,16 +455,16 @@
           <div class="portfolio-carousel">
             <div class="img-slide">
               <div class="img-item">
-                <img src="static/img/communication.png" alt="" />
+                <img src="/img/play.png" alt="" />
               </div>
               <div class="img-item">
-                <img src="static/img/facebook.png" alt="" />
+                <img src="/img/whatsapp.png" alt="" />
               </div>
               <div class="img-item">
-                <img src="static/img/whatsapp.png" />
+                <img src="/img/github.png" />
               </div>
               <div class="img-item">
-                <img src="static/img/play.png" alt="" />
+                <img src="/img/facebook.png" alt="" />
               </div>
             </div>
           </div>
@@ -498,7 +490,7 @@
             <i class="bx bxs-phone"></i>
             <div class="detail">
               <p>Phone</p>
-              <p>(+211 981 532 821)</p>
+              <p>(+211 920 707 840)</p>
             </div>
           </div>
 
@@ -520,7 +512,7 @@
         </div>
 
         <div class="contact-box">
-          <form action="/" enctype="multipart/form-data" method="post">
+          <form action="{{ url_for('index') }}" enctype="multipart/form-data" method="POST">
             <h2 class="heading">Contact <span>Me!</span></h2>
             <div class="field-box">
               <input type="text" name="name" placeholder="Full Name" required />
@@ -537,8 +529,8 @@
                 required
               />
               <input
-                type="email"
-                name="sub-email"
+                type="text"
+                name="subemail"
                 placeholder="Email Subject"
                 required
               />
@@ -556,8 +548,4 @@
         </div>
       </div>
     </section>
-
-    <!-- Custom js -->
-    <script src="static/js/script.js"></script>
-  </body>
-</html>
+  {% endblock %}

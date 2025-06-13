@@ -1,14 +1,14 @@
 @font-face {
   font-family: Roboto;
-  src: url(fonts/Roboto-Regular.ttf);
+  src: url(/fonts/Roboto-Regular.ttf);
 }
 @font-face {
   font-family: RobotoMedium;
-  src: url(fonts/Roboto-Medium.ttf);
+  src: url(/fonts/Roboto-Medium.ttf);
 }
 @font-face {
   font-family: RobotoBold;
-  src: url(fonts/Roboto-Bold.ttf);
+  src: url(/fonts/Roboto-Bold.ttf);
 }
 * {
   margin: 0;
@@ -415,7 +415,7 @@ section.active {
   background: var(--second-bg-color);
   border-radius: 0.8rem;
   padding: 3rem 2.5rem;
-  height: calc((35rem - 2rem) / 2);
+  height: calc((80rem - 10rem) / 2);
   display: flex;
   flex-direction: column;
   justify-content: center;
