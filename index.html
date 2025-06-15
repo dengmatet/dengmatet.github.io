@@ -1,8 +1,19 @@
-{% extends "base.html" %}
-  {% block title %} deng-matet.GitHub.io {% endblock %}
-  {% block content %}
-  
-    <!-- header -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Deng Matet Portfolio</title>
+    <!-- CUSTOM CSS -->
+    <link rel="stylesheet" href="static/css/style.css" />
+    <!-- CUSTOM ICONS -->    
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/boxicons@latest/css/boxicons.min.css">
+    <!-- or -->
+    <link rel="stylesheet" href="https://unpkg.com/boxicons@latest/css/boxicons.min.css">
+    <link href="https://unpkg.com/boxicons@2.1.4/cssboxicons.min.css" rel="stylesheet">
+</head>
+<body>
+     <!-- header -->
     <header class="active">
       <a href="#" class="logo">Matet.</a>
       <i class="bx bx-menu" id="menu-icon"></i>
@@ -63,7 +74,7 @@
       <div class="home-img">
         <div class="img-box">
           <div class="img-item">
-            <img src="/img/me.png" alt="" />
+            <img src="static/img/me.png" alt="" />
           </div>
         </div>
       </div>
@@ -455,16 +466,16 @@
           <div class="portfolio-carousel">
             <div class="img-slide">
               <div class="img-item">
-                <img src="/img/play.png" alt="" />
+                <img src="static/img/play.png" alt="" />
               </div>
               <div class="img-item">
-                <img src="/img/whatsapp.png" alt="" />
+                <img src="static/img/github.png" alt="" />
               </div>
               <div class="img-item">
-                <img src="/img/github.png" />
+                <img src="static/img/whatsapp.png" />
               </div>
               <div class="img-item">
-                <img src="/img/facebook.png" alt="" />
+                <img src="static/img/communication.png" alt="" />
               </div>
             </div>
           </div>
@@ -512,7 +523,7 @@
         </div>
 
         <div class="contact-box">
-          <form action="{{ url_for('index') }}" enctype="multipart/form-data" method="POST">
+          <form action="index.html" enctype="multipart/form-data" method="POST">
             <h2 class="heading">Contact <span>Me!</span></h2>
             <div class="field-box">
               <input type="text" name="name" placeholder="Full Name" required />
@@ -548,4 +559,7 @@
         </div>
       </div>
     </section>
-  {% endblock %}
+      <!-- CUSTOM JS -->
+     <script src="static/js/script.js"></script>
+</body>
+</html>
